@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Resume Analyzer</h1>
+        
+        <div class="upload-section">
+            <label for="resume">Upload Resume (PDF/DOCX):</label>
+            <input type="file" id="resume" accept=".pdf, .docx">
+        </div>
+
+        <div class="job-desc-section">
+            <label for="jobDesc">Paste Job Description:</label>
+            <textarea id="jobDesc" placeholder="Paste the job description here..."></textarea>
+        </div>
+
+        <button onclick="analyzeResume()">Analyze</button>
+
+        <div class="result">
+            <h2>Match Score: <span id="matchScore">--</span>%</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
